@@ -65,6 +65,17 @@ public class RadioTest {
     }
 
     @Test
+    public void shouldPrevStation4() {
+        Radio calc = new Radio();
+        calc.setCurrentRadio(19);
+        calc.prev();
+        int expected = 9;
+        int actual = calc.getCurrentRadio();
+
+        Assertions.assertEquals(actual, expected);
+    }
+
+    @Test
 
     public void shouldIncreaseVolume() {
         Radio calc = new Radio();
@@ -118,27 +129,6 @@ public class RadioTest {
         calc.decreaseVolume();
         int expected = 10;
         int actual = calc.getCurrentVolume();
-
-        Assertions.assertEquals(actual, expected);
-    }
-
-    @Test
-
-    public void shouldChosenRadio() {
-        Radio calc = new Radio();
-        calc.setChosenRadio(8);
-        int expected = 8;
-        int actual = calc.getCurrentRadio();
-
-        Assertions.assertEquals(actual, expected);
-    }
-
-    @Test
-    public void shouldChosenRadio2() {
-        Radio calc = new Radio();
-        calc.setChosenRadio(12);
-        int expected = 0;
-        int actual = calc.getCurrentRadio();
 
         Assertions.assertEquals(actual, expected);
     }

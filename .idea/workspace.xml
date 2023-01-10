@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58fb0695-443f-4ec4-a028-a61821a86499" name="Changes" comment="Encapsulation added and methods fixed">
+    <list default="true" id="58fb0695-443f-4ec4-a028-a61821a86499" name="Changes" comment="Early exit added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Radio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,13 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673353074679</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Early exit added">
+      <created>1673361962879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673361962879</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Code and Tests added" />
     <MESSAGE value="Encapsulation added and methods fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encapsulation added and methods fixed" />
+    <MESSAGE value="Early exit added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Early exit added" />
   </component>
 </project>

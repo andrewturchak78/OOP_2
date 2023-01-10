@@ -6,6 +6,9 @@ public class Radio {
 
 
     public void setCurrentRadio(int newCurrentRadio) {
+        if (newCurrentRadio > 9) {
+            return;
+        }
         currentRadio = newCurrentRadio;
     }
 
@@ -13,12 +16,6 @@ public class Radio {
         currentVolume = newCurrentVolume;
     }
 
-    public void setChosenRadio(int newChosenRadio) {
-        if (newChosenRadio > 9) {
-            return;
-        }
-        currentRadio = newChosenRadio;
-    }
 
     public int getCurrentRadio() {
         return currentRadio;
@@ -59,14 +56,10 @@ public class Radio {
     }
 
     public void prev() {
-        if (currentRadio <= 9) {
-            currentRadio = currentRadio - 1;
-        }
         if ((currentRadio - 1) < 0) {
             currentRadio = 9;
-        }
-        if (currentRadio > 9) {
-            currentRadio = 9;
+        } else {
+            currentRadio = currentRadio - 1;
         }
     }
 }
