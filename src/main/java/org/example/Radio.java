@@ -9,6 +9,9 @@ public class Radio {
         if (newCurrentRadio > 9) {
             return;
         }
+        if (newCurrentRadio < 0) {
+            return;
+        }
         currentRadio = newCurrentRadio;
     }
 

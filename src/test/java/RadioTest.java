@@ -29,6 +29,16 @@ public class RadioTest {
     }
 
     @Test
+    public void shouldNotSetRadio() {
+        Radio calc = new Radio();
+        calc.setCurrentRadio(-1);
+        int expected = 0;
+        int actual = calc.getCurrentRadio();
+
+        Assertions.assertEquals(actual, expected);
+    }
+
+    @Test
 
     public void shouldPrevStation() {
         Radio calc = new Radio();
