@@ -137,7 +137,7 @@ public class RadioTest {
     public void shouldChosenRadio2() {
         Radio calc = new Radio();
         calc.setChosenRadio(12);
-        int expected = 9;
+        int expected = 0;
         int actual = calc.getCurrentRadio();
 
         Assertions.assertEquals(actual, expected);

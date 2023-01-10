@@ -14,11 +14,10 @@ public class Radio {
     }
 
     public void setChosenRadio(int newChosenRadio) {
-        if (newChosenRadio <= 9) {
-            currentRadio = newChosenRadio;
-        } else {
-            currentRadio = 9;
+        if (newChosenRadio > 9) {
+            return;
         }
+        currentRadio = newChosenRadio;
     }
 
     public int getCurrentRadio() {
