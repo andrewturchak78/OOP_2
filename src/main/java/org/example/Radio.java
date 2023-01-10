@@ -1,17 +1,9 @@
 package org.example;
 
 public class Radio {
-    int currentRadio;
+    private int currentRadio;
+    private int currentVolume;
 
-    public int getCurrentRadio() {
-        return currentRadio;
-    }
-
-    int currentVolume;
-
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
 
     public void setCurrentRadio(int newCurrentRadio) {
         currentRadio = newCurrentRadio;
@@ -19,6 +11,22 @@ public class Radio {
 
     public void setCurrentVolume(int newCurrentVolume) {
         currentVolume = newCurrentVolume;
+    }
+
+    public void setChosenRadio(int newChosenRadio) {
+        if (newChosenRadio <= 9) {
+            currentRadio = newChosenRadio;
+        } else {
+            currentRadio = 9;
+        }
+    }
+
+    public int getCurrentRadio() {
+        return currentRadio;
+    }
+
+    public int getCurrentVolume() {
+        return currentVolume;
     }
 
     public void increaseVolume() {
@@ -59,14 +67,6 @@ public class Radio {
             currentRadio = 9;
         }
         if (currentRadio > 9) {
-            currentRadio = 9;
-        }
-    }
-
-    public void setChosenRadio(int newChosenRadio) {
-        if (newChosenRadio <= 9) {
-            currentRadio = newChosenRadio;
-        } else {
             currentRadio = 9;
         }
     }
